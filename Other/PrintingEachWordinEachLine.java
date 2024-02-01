@@ -1,21 +1,25 @@
 package Other;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class PrintingEachWordinEachLine {public static void main(String[] args){
-    Scanner input = new Scanner(System.in);
+import static Other.IndividWord.individualWord;
 
-    System.out.print("Give a sentence, the words will be printed in seperate line: ");
-    String sentence = input.nextLine();
+public class PrintingEachWordinEachLine{
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    String words[]=sentence.split(" ");
+        System.out.print("Give a sentence, the words will be printed on separate lines: ");
+        String Para = input.nextLine();
 
-   for(int i =0;i< words.length;i++) {
-       System.out.println(words[i]);
-   }
+        invidWord.individualWord(Para);
+    }
 
 
+    public class invidWord {
 
-}
-}
+        static void individualWord(String sentence) {
+            String words[] = sentence.split(" ");
+            for(String a : words) {
+                System.out.println(a);
+            }
+        }}}
