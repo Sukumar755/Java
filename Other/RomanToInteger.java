@@ -46,7 +46,7 @@ public class RomanToInteger { public static void main(String[] args) {
 
     else
     {
-        System.out.println("Invalid roman numeral");
+        System.out.println("It is an invalid roman numeral");
     }
 
 }}
