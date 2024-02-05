@@ -1,9 +1,14 @@
 package Other;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class AvgAndMaxArray {public static void main(String[] args){
-int number = 25;
+
+    Scanner srav = new Scanner(System.in);
+    System.out.print("Give me a number: ");
+
+int number = srav.nextInt();
 int count = 0;
    String number1 = (Integer.toBinaryString(number));
     System.out.println(number1);
