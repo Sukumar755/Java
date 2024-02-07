@@ -13,12 +13,10 @@ public class Except2 { public static void main(String[] args){
         int b = input.nextInt();
         int[]x={1,0,2,3,4};
 
-        try{ int d = a/b;
-            System.out.println(d);}
-        catch(ArithmeticException e) {
+        int d = a/b;
+            System.out.println(d);
 
-            System.out.println("zero kind pettaku ra ayya");
-        }
+
 
         int c =x[4]/x[2];
 
@@ -29,13 +27,12 @@ public class Except2 { public static void main(String[] args){
 
 
 
-    catch(IndexOutOfBoundsException z){
-        System.out.println("Check the length of the array");
+    catch(Exception z){
+
+        z.printStackTrace();
     }
 
-    catch(InputMismatchException e){
-        System.out.println("You should only give integers");
-    }
+
 
     System.out.println("bye");
 
